@@ -13,7 +13,7 @@ export default defineConfig({
     vue(),
     typescript2({
       check: false,
-      
+      include: ["./src/KaKaoLogin/*.ts"],
       tsconfigOverride: {
         compilerOptions: {
           sourceMap: true,
@@ -26,7 +26,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": resolve(__dirname, "src"),
+      "@/": resolve(__dirname, "src"),
       find: "@vue/runtime-core",
       replacement: "@vue/runtime-core/dist/runtime-core.esm-bundler.js",
     },

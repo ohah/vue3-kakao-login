@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref, inject, provide, computed } from 'vue';
-import { KakaoAuth, isInitialized, AuthSuccessCallback } from './KaKaoLoginPlugin';
-import axios, { AxiosPromise } from "axios";
+import { KakaoAuth, AuthSuccessCallback } from './KaKaoLoginPlugin';
+import axios from "axios";
+import { isInitialized } from './KakaoLogin/build';
 const Kakao = inject<KakaoAuth>("Kakao");
 
 const localStorageKakaoToken = (data: AuthSuccessCallback) => {

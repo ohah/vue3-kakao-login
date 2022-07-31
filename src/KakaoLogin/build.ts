@@ -1,6 +1,6 @@
 import { App } from "vue";
-import { script } from "@/KakaoLogin";
-import { KakaoAuth } from "@/KaKaoLoginPlugin";
+import { script } from "../KakaoLogin";
+import { KakaoAuth } from "../KaKaoLoginPlugin";
 export const Auth:KakaoAuth = {} as KakaoAuth;
 export let initialize: ()=> Promise<void>;
 
@@ -8,7 +8,7 @@ export function isInitialized() {
   return initialize();
 }
 
-export default async (app: App, options: { apiKey: string, url?:string } = { apiKey: "" , url: "https://developers.kakao.com/sdk/js/kakao.min.js"}) => {
+export default (app: App, options: { apiKey: string, url?:string } = { apiKey: "" , url: "https://developers.kakao.com/sdk/js/kakao.min.js"}) => {
   options = {
     ...options,
     url: options.url || "https://developers.kakao.com/sdk/js/kakao.min.js",
@@ -21,7 +21,7 @@ export default async (app: App, options: { apiKey: string, url?:string } = { api
     apiKey: options.apiKey,
     url: options.url
   })
-  window.addEventListener("DOMContentLoaded", async () => {
+  window.addEventListener("DOMContentLoaded", () => {
     initialize();
   });
   // const Kakao = Symbol() as InjectionKey<KakaoAuth>

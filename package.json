@@ -1,7 +1,7 @@
 {
   "name": "vue3-kakao-login",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.151",
   "description": "vue3-kakao-login",
   "keywords": [
     "kakao",
@@ -37,7 +37,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "tsc && vue-tsc --noEmit && vite build",
     "preview": "vite preview --port 5050",
     "typecheck": "vue-tsc --noEmit"
   },

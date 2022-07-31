@@ -1,5 +1,5 @@
-import { build } from "@/KakaoLogin";
-import { isInitialized } from "@/KakaoLogin/build";
+import { build } from "./KakaoLogin";
+import { isInitialized } from "./KakaoLogin/build";
 
 interface AuthSuccessCallback {
   /**
