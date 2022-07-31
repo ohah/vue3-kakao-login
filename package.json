@@ -1,0 +1,56 @@
+{
+  "name": "vue3-kakao-login",
+  "private": false,
+  "version": "0.1.0",
+  "description": "vue3-kakao-login",
+  "keywords": [
+    "kakao",
+    "kakao-login",
+    "vue3-kakao-login"
+  ],
+  "author": {
+    "email": "bookyoon173@gmail.com",
+    "name": "ohah",
+    "url": "https://github.com/ohah/vue3-kakao-login"
+  },
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./style.css": "./dist/style.css"
+  },
+  "browser": {
+    "./style.css": "./dist/style.css"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/KaKaoLoginPlugin.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ohah/vue3-kakao-login"
+  },
+  "contributors": [
+    "ohah"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --port 5050",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.0",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.4",
+    "vue-tsc": "^0.39.2"
+  }
+}
