@@ -56,9 +56,9 @@ const getToken = async () => {
 			makeFormData({
 				response_type: 'code',
 				grant_type: 'authorization_code',
-				client_id: 'f04f16218867b9f1dcfa3b70dc3813ff',
+				client_id: 'client_id',
 				redirect_uri: 'http://localhost:5173/',
-				client_secret: 'tokPHJnOiMLBmOIsprxSgnIRwwzcJhVB',
+				client_secret: 'client_secret',
 				code,
 			}),
 			{
